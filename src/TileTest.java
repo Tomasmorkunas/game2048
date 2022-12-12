@@ -7,7 +7,7 @@ public class TileTest {
     public void tileShouldBeAdded(){
         GameLogic gameLogic = new GameLogic();
 
-        gameLogic.getTile().ManualPridetiBloka(1, 2, 8);
+        gameLogic.getTile().manualPridetiBloka(1, 2, 8);
 
         Assert.assertEquals(gameLogic.getMap().getPlyteles()[1][2], 8);
     }

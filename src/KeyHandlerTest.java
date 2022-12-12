@@ -3,7 +3,7 @@ import org.testng.Assert;
 
 public class KeyHandlerTest {
     @Test
-    void UserInputPressQuitKeyGameShouldOver(){
+    void userInputPressQuitKeyGameShouldOver(){
         GameLogic gameLogic = new GameLogic();
 
         gameLogic.getKeyHandler().userInput('q');

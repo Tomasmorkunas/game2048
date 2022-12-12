@@ -12,19 +12,7 @@ public class Map {
         return plyteles;
     }
 
-    public void setPlyteles(int[][] plyteles) {
-        this.plyteles = plyteles;
-    }
-
-    public int[][] getPlytelesKopija() {
-        return plytelesKopija;
-    }
-
-    public void setPlytelesKopija(int[][] plytelesKopija) {
-        this.plytelesKopija = plytelesKopija;
-    }
-
-    void atvaizdavimas()
+    void atvaizduoti()
     {
         System.out.print("Zaidimas 2048\n\n");
         System.out.print("Paspauskite Esc, noredami nutraukti zaidima.\n");
@@ -48,7 +36,7 @@ public class Map {
         System.out.print("Taskai: "+ gameLogic.getScore().getTaskai());
     }
 
-    public void padarytiMapKopidja() {
+    public void padarytiMapKopija() {
         for (int i = 0; i < eiluciu; i++)
             for (int j = 0; j < stulpeliu; j++)
                 plytelesKopija[i][j] = plyteles[i][j];

@@ -33,10 +33,10 @@ public class GameLogic {
                 break;
         }
 
-        tile.ManualPridetiBloka(pozicija1, pozicija2, 2); //1 skaiciaus x ir y pozicijos paleidus zaidima
-        tile.ManualPridetiBloka(pozicija3, pozicija4, 4); //2 skaiciaus x ir y pozicijos paleidus zaidima
+        tile.manualPridetiBloka(pozicija1, pozicija2, 2); //1 skaiciaus x ir y pozicijos paleidus zaidima
+        tile.manualPridetiBloka(pozicija3, pozicija4, 4); //2 skaiciaus x ir y pozicijos paleidus zaidima
 
-        map.atvaizdavimas();
+        map.atvaizduoti();
     }
 
     public Map getMap() {
@@ -61,7 +61,7 @@ public class GameLogic {
 
     public void apdorotiZaidimoLogika() {
         char klavisas;
-        map.padarytiMapKopidja();
+        map.padarytiMapKopija();
 
         Scanner s= new Scanner(System.in);
         klavisas = s.next().charAt(0);
@@ -72,7 +72,7 @@ public class GameLogic {
             tile.autoPridetiBloka();
         }
 
-        map.atvaizdavimas();
+        map.atvaizduoti();
 
         gameRules.arZaidimasBaigtas();
     }

@@ -34,15 +34,13 @@ public class GameRules {
     }
 
     boolean arReikiaPridetiNaujaTile(){
-        boolean fl = true;
         for (int i = 0; i < 4; i++)
             for (int j = 0; j < 4; j++)
                 if (gameLogic.getMap().plytelesKopija[i][j] != gameLogic.getMap().getPlyteles()[i][j])
                 {
-                    fl = false;
-                    break;
+                    return false;
                 }
-        return fl;
+        return true;
     }
 
 }

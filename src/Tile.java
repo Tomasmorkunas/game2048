@@ -176,7 +176,7 @@ public class Tile {
             }
         }
     }
-    void ManualPridetiBloka(int pos1, int pos2, int value) {
+    void manualPridetiBloka(int pos1, int pos2, int value) {
         gameLogic.getMap().getPlyteles()[pos1][pos2] = value;
     }
 }
